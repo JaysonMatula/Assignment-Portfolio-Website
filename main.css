@@ -10,3 +10,39 @@ body {
 ul {
   list-style: none;
 }
+.assignments {
+    display: flex;
+    justify-content: center;
+  flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.assignments li {
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-align: center;
+    min-width: 180px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.assignments li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.assignments li:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+a.disabled {
+    color: gray;
+    pointer-events: none;
+}
